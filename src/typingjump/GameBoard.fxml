@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="typingjump.GameBoardController">
+    <children>
+        <ImageView fx:id="backGround" fitHeight="409.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@resourses/background.jpg" />
+            </image>
+        </ImageView>
+        <VBox fx:id="steps_array" alignment="CENTER" layoutX="212.0" layoutY="-135.0" prefHeight="536.0" prefWidth="379.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="212.0" AnchorPane.rightAnchor="209.0" AnchorPane.topAnchor="-135.0" />
+        <ImageView fitHeight="309.0" fitWidth="133.0" layoutX="-3.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@resourses/Levels.png" />
+            </image>
+            <effect>
+                <DropShadow />
+            </effect>
+        </ImageView>
+        <VBox fx:id="vbox" alignment="CENTER" layoutX="51.0" layoutY="143.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="104.0" prefWidth="14.0" AnchorPane.bottomAnchor="153.0" AnchorPane.leftAnchor="51.0" AnchorPane.rightAnchor="735.0" AnchorPane.topAnchor="143.0" />
+        <Label fx:id="lbLevel" layoutX="23.0" layoutY="71.0" styleClass="textfont" text="Level 1" textFill="WHITE" />
+        <HBox fx:id="hboxHart" nodeOrientation="RIGHT_TO_LEFT">
+            <children>
+                <ImageView fx:id="imgHeart1" fitHeight="71.0" fitWidth="41.0" onMouseEntered="#handleentered1" onMouseExited="#handleexited1" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@resourses/heart.png" />
+                    </image>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                    <rotationAxis>
+                        <Point3D y="1.0" />
+                    </rotationAxis>
+                </ImageView>
+                <ImageView fx:id="imgHeart2" fitHeight="71.0" fitWidth="41.0" onMouseEntered="#handleentered2" onMouseExited="#handleexited2" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@resourses/heart.png" />
+                    </image>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </ImageView>
+                <ImageView fx:id="imgHeart3" fitHeight="71.0" fitWidth="41.0" onMouseEntered="#handleentered3" onMouseExited="#handleexited3" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@resourses/heart.png" />
+                    </image>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </ImageView>
+            </children>
+            <padding>
+                <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+            </padding>
+        </HBox>
+        <ImageView fitHeight="89.0" fitWidth="161.0" layoutX="43.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@resourses/exit.png" />
+            </image>
+            <effect>
+                <DropShadow />
+            </effect>
+        </ImageView>
+        <JFXButton layoutX="43.0" layoutY="327.0" onAction="#ExitHun" prefHeight="46.0" prefWidth="161.0" styleClass="textfont" text="Back Home" textFill="#fff6d9">
+            <font>
+                <Font name="AGA Arabesque Desktop" size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <ImageView fitHeight="64.0" fitWidth="161.0" layoutX="624.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@resourses/wood.png" />
+            </image>
+            <effect>
+                <DropShadow />
+            </effect>
+        </ImageView>
+        <Label layoutX="637.0" layoutY="39.0" styleClass="textfont" text="Score:" textFill="#fff6d9">
+            <font>
+                <Font name="Cooper Black" size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="lbScore" layoutX="705.0" layoutY="39.0" prefHeight="21.0" prefWidth="69.0" styleClass="textfont" text=" " textFill="#fff6d9" />
+      <Group fx:id="characterGroup" layoutX="650.0" layoutY="200.0" />
+    </children>
+    <stylesheets>
+        <URL value="@styling.css" />
+    </stylesheets>
+</AnchorPane>

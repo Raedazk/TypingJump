@@ -1,0 +1,40 @@
+/* 
+ * @authors Raeda azkoul, Noor Al-Hafez, Fatema Bayat, Aisha Farouque, Fatimah Jabr
+*/
+.textfont{
+    -fx-font-family: 'Cambria';
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+.JFXButton{
+    -fx-cursor: hand;
+}
+/*------------------------------start of tableView styling-----------------------------------*/
+/* making the rows and the header transparent*/
+.table-row-cell, .table-view .column-header-background ,.table-view .filler{
+    -fx-color:transparent;
+    -fx-background-color: transparent;
+}
+/* coloring the selected row to green */
+.table-row-cell:selected {
+    -fx-background-color:#999900;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+
+}
+/* coloring the text inside the tabel cells */
+.table-view .table-cell{
+    -fx-text-fill: #FFF6D9; /* light green*/
+
+}
+/* coloring the text inside the tabel header cells */
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFF6D9; /* light green*/
+}
+
+.table-column{
+    -fx-text-alignment: center;
+    -fx-alignment:center;
+}
+/*---------------------------------End of tableView styling-----------------------------------*/

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="800.0" stylesheets="@styling.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="typingjump.TipsVideoController">
+   <children>
+      <ImageView fitHeight="405.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resourses/background.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="453.0" fitWidth="537.0" layoutX="123.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resourses/vedioBoard.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect></ImageView>
+      <ImageView fitHeight="48.0" fitWidth="109.0" layoutX="304.0" layoutY="335.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resourses/addTextButton.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="109.0" layoutX="415.0" layoutY="335.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resourses/addTextButton.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <JFXButton layoutX="311.0" layoutY="335.0" onAction="#onClick_play" styleClass="textfont" text="Play" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="420.0" layoutY="335.0" onAction="#onClick_stop" styleClass="textfont" text="Stop" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <MediaView fx:id="mv" fitHeight="222.0" fitWidth="380.0" layoutX="200.0" layoutY="66.0" />
+      <ImageView fitHeight="79.0" fitWidth="139.0" layoutX="14.0" layoutY="321.0" pickOnBounds="true">
+         <image>
+            <Image url="@resourses/exit.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <JFXButton layoutX="18.0" layoutY="334.0" onAction="#Back" prefHeight="23.0" prefWidth="132.0" styleClass="textfont" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnNext" buttonType="RAISED" layoutX="25.0" layoutY="137.0" prefHeight="62.0" prefWidth="78.0" ripplerFill="TRANSPARENT" textFill="TRANSPARENT">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="84.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resourses/howToPlayLeftButton.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="btnPrevious" buttonType="RAISED" layoutX="650.0" layoutY="132.0" prefHeight="98.0" prefWidth="112.0" ripplerFill="TRANSPARENT" style="-fx-color: transperant;" textFill="#e5e5e501">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="84.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@resourses/howToPlayLeftButton.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </graphic></JFXButton>
+   </children>
+</AnchorPane>

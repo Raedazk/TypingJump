@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="800.0" styleClass="textfont" stylesheets="@styling.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="typingjump.AddPlayTextController">
+<children>
+      <ImageView fitHeight="400.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resourses/background.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="300.0" fitWidth="335.0" layoutX="235.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resourses/addTextBoard.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="225.0" fitWidth="225.0" layoutX="279.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true" styleClass="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;?import javafx.scene.image.Image?&gt;&lt;?import javafx.scene.image.ImageView?&gt;&lt;ImageView fitHeight=&quot;300.0&quot; fitWidth=&quot;335.0&quot; layoutX=&quot;235.0&quot; layoutY=&quot;25.0&quot; pickOnBounds=&quot;true&quot; preserveRatio=&quot;true&quot; xmlns=&quot;http://javafx.com/javafx/8.0.171&quot; xmlns:fx=&quot;http://javafx.com/fxml/1&quot;&gt;   &lt;image&gt;      &lt;Image url=&quot;@../../../../Downloads/addTextBoard.png&quot; /&gt;   &lt;/image&gt;&lt;/ImageView&gt;">
+         <image>
+            <Image url="@resourses/addTextPageTextArea.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="394.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true" styleClass="textfont">
+         <image>
+            <Image url="@resourses/addTextButton.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect></ImageView>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="282.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resourses/addTextButton.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+<Label layoutX="280.0" layoutY="128.0" styleClass="textfont" stylesheets="@styling.css" text="Enter your text here" textFill="#fff6d9" />
+<Label alignment="CENTER" layoutX="320.0" layoutY="52.0" styleClass="textfont" stylesheets="@styling.css" text="Adding text" textAlignment="CENTER" textFill="#fff6d9" />
+      <JFXButton layoutX="276.0" layoutY="307.0" onAction="#cancel" prefHeight="55.0" prefWidth="106.0" styleClass="textfont" stylesheets="@styling.css" text="Cancel" textFill="#fff6d9">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton layoutX="394.0" layoutY="307.0" onAction="#oK" prefHeight="55.0" prefWidth="92.0" styleClass="textfont" stylesheets="@styling.css" text="OK" textFill="#fff6d9">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXTextField fx:id="fdNewText" alignment="TOP_LEFT" focusColor="#405aa800" layoutX="283.0" layoutY="170.0" prefHeight="85.0" prefWidth="219.0" unFocusColor="#d1d1d100" />
+</children>
+</AnchorPane>

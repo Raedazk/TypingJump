@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" stylesheets="@styling.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="typingjump.ResultController">
+    <children>
+        <ImageView fitHeight="418.0" fitWidth="810.0" layoutY="-5.0" preserveRatio="true">
+            <image>
+                <Image url="@resourses/background.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="350.0" fitWidth="316.0" layoutX="233.0" layoutY="52.0" pickOnBounds="true">
+            <image>
+                <Image url="@resourses/scorePageBoard1.png" />
+            </image>
+         <effect>
+            <DropShadow />
+         </effect>
+        </ImageView>
+        <ImageView fitHeight="121.0" fitWidth="162.0" layoutX="305.0" layoutY="304.0" pickOnBounds="true">
+            <image>
+                <Image url="@resourses/scorePageButton.png" />
+            </image>
+         <effect>
+            <DropShadow />
+         </effect>
+        </ImageView>
+        <ImageView fitHeight="150.0" fitWidth="76.0" layoutX="278.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@resourses/scorePageStar.png" />
+            </image>
+         <effect>
+            <DropShadow />
+         </effect>
+        </ImageView>
+        <ImageView fitHeight="150.0" fitWidth="76.0" layoutX="353.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@resourses/scorePageStar.png" />
+            </image>
+         <effect>
+            <DropShadow />
+         </effect>
+        </ImageView>
+        <ImageView fitHeight="150.0" fitWidth="76.0" layoutX="427.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@resourses/scorePageStar.png" />
+            </image>
+         <effect>
+            <DropShadow />
+         </effect>
+        </ImageView>
+        <VBox layoutX="267.0" layoutY="107.0" styleClass="textfont">
+            <children>
+                <HBox>
+                    <children>
+                        <Label prefHeight="30.0" prefWidth="135.0" styleClass="textfont" text="User Name :" textFill="#fcfafa">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="user_name" styleClass="textfont" text="Label" textFill="#fffffe">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox>
+                    <children>
+                        <Label styleClass="textfont" text="Score :" textFill="#fffffe">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="score" styleClass="textfont" text="Label" textFill="#fffffe">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox>
+                    <children>
+                        <Label styleClass="textfont" text="Time /min :" textFill="#fffffe">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="time" styleClass="textfont" text="Label" textFill="#fffffe">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox>
+                    <children>
+                        <Label styleClass="textfont" text="Speed " textFill="#fffffe">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                  <Label alignment="BOTTOM_CENTER" prefHeight="26.0" prefWidth="53.0" style="-fx-font-size: 10px;" text="char/min :" textFill="#fff6d9" />
+                        <Label fx:id="speed" styleClass="textfont" text="Label" textFill="#fffffe">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox>
+                    <children>
+                        <Label styleClass="textfont" text="Accuracy :" textFill="#fffffe">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="accuracy" styleClass="textfont" text="Label" textFill="#fffffe">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox>
+                    <children>
+                        <Label styleClass="textfont" text="No. of character :" textFill="#fffffe">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="no_chars" styleClass="textfont" text="Label" textFill="#fffffe">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox>
+                    <children>
+                        <Label alignment="CENTER" styleClass="textfont" text="Type :" textFill="#fffffe">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="type" styleClass="textfont" text="Label" textFill="#fffffe">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <JFXButton layoutX="303.0" layoutY="336.0" onAction="#okbutton" prefHeight="58.0" prefWidth="162.0" styleClass="textfont" text="Back Home" textFill="WHITE">
+            <font>
+                <Font name="Cambria Bold" size="22.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </JFXButton>
+    </children>
+</AnchorPane>

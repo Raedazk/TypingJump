@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="typingjump.RegisterationController">
+    <children>
+        <ImageView fitHeight="402.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@resourses/background.jpg" />
+            </image>
+            <effect>
+                <DropShadow />
+            </effect>
+        </ImageView>
+      <ImageView fitHeight="243.0" fitWidth="169.0" layoutX="627.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resourses/TypingJump-01.png" />
+         </image>
+      </ImageView>
+        <ImageView fitHeight="400.0" fitWidth="420.0" layoutX="327.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@resourses/homePageBoared.png" />
+            </image>
+            <effect>
+                <DropShadow />
+            </effect>
+        </ImageView>
+        <Label layoutX="484.0" layoutY="42.0" text="WELCOME" textFill="WHITE">
+            <font>
+                <Font name="Cambria Bold" size="18.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="191.0" fitWidth="182.0" layoutX="435.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@resourses/homePageTxtfield.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="494.0" layoutY="91.0" text="Name" textFill="WHITE">
+            <font>
+                <Font name="Cambria Bold" size="22.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="playerName" focusColor="#fafafa00" layoutX="441.0" layoutY="116.0" prefHeight="21.0" prefWidth="169.0" style="-fx-background-color: transparent; -fx-text-color: white;" unFocusColor="#ffffff00">
+            <font>
+                <Font name="Cambria" size="14.0" />
+            </font>
+        </JFXTextField>
+        <Label layoutX="494.0" layoutY="161.0" text="Gender" textFill="WHITE">
+            <font>
+                <Font name="Cambria Bold" size="22.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="190.0" fitWidth="176.0" layoutX="439.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@resourses/homePageTxtfield.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="558.0" layoutY="192.0" text="Female" textFill="WHITE">
+            <font>
+                <Font name="Cambria Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="474.0" layoutY="193.0" text="Male" textFill="WHITE">
+            <font>
+                <Font name="Cambria Bold" size="18.0" />
+            </font>
+        </Label>
+        <JFXComboBox fx:id="comboxType" cache="true" cacheHint="SPEED" focusColor="#638f9900" layoutX="445.0" layoutY="260.0" prefHeight="31.0" prefWidth="169.0" unFocusColor="#4d4d4d1e">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXComboBox>
+        <Label layoutX="453.0" layoutY="233.0" text="Type of string" textFill="WHITE">
+            <font>
+                <Font name="Cambria Bold" size="22.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="39.0" fitWidth="36.0" layoutX="517.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@resourses/checkbox.png" />
+            </image>
+            <effect>
+                <DropShadow />
+            </effect>
+        </ImageView>
+        <ImageView fitHeight="191.0" fitWidth="336.0" layoutX="194.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@resourses/homePageButtom.png" />
+            </image>
+            <effect>
+                <DropShadow />
+            </effect>
+        </ImageView>
+        <ImageView fitHeight="191.0" fitWidth="336.0" layoutX="194.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@resourses/homePageButtom.png" />
+            </image>
+            <effect>
+                <DropShadow />
+            </effect>
+        </ImageView>
+        <ImageView fitHeight="191.0" fitWidth="336.0" layoutX="194.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@resourses/homePageButtom.png" />
+            </image>
+            <effect>
+                <DropShadow />
+            </effect>
+        </ImageView>
+        <JFXButton layoutX="195.0" layoutY="138.0" onAction="#AddTextBtn" prefHeight="46.0" prefWidth="183.0" text="Add Text" textFill="#f2eeee">
+            <font>
+                <Font name="Cambria Bold" size="24.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <JFXButton layoutX="201.0" layoutY="68.0" onAction="#HowToPlayBtn" prefHeight="46.0" prefWidth="176.0" text="How to play" textFill="#fcfcfc">
+            <font>
+                <Font name="Cambria Bold" size="24.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <JFXButton layoutX="492.0" layoutY="338.0" onAction="#startGame" prefHeight="46.0" prefWidth="75.0" text="Play" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Cambria Bold" size="22.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <ImageView fitHeight="191.0" fitWidth="336.0" layoutX="200.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@resourses/homePageButtom.png" />
+            </image>
+            <effect>
+                <DropShadow />
+            </effect>
+        </ImageView>
+        <JFXButton layoutX="205.0" layoutY="284.0" onAction="#WatchVideoBtn" prefHeight="46.0" prefWidth="182.0" text="Video Tips" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Cambria Bold" size="22.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <JFXButton layoutX="199.0" layoutY="211.0" onAction="#TopThreeBtn" text="Leader Board" textFill="#fcfcfc">
+            <font>
+                <Font name="Cambria Bold" size="24.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <ImageView fitHeight="39.0" fitWidth="36.0" layoutX="438.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@resourses/checkbox.png" />
+            </image>
+        </ImageView>
+        <JFXRadioButton fx:id="rdFemale" contentDisplay="RIGHT" layoutX="523.0" layoutY="192.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.2" prefHeight="0.0" prefWidth="0.0" style="-fx-background-color: transparent;" textAlignment="RIGHT">
+            <toggleGroup>
+                <ToggleGroup fx:id="gender" />
+            </toggleGroup>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXRadioButton>
+        <JFXRadioButton fx:id="rdMale" contentDisplay="GRAPHIC_ONLY" layoutX="447.0" layoutY="192.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.2" prefHeight="0.0" prefWidth="0.0" selected="true" style="-fx-background-color: transparent;" textAlignment="RIGHT" toggleGroup="$gender">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXRadioButton>
+        <ImageView fx:id="checkFemale" fitHeight="46.0" fitWidth="39.0" layoutX="519.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@resourses/checkboxCheck.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="checkMale" fitHeight="46.0" fitWidth="39.0" layoutX="439.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@resourses/checkboxCheck.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="94.0" fitWidth="147.0" layoutX="24.0" layoutY="307.0" pickOnBounds="true">
+            <image>
+                <Image url="@resourses/exit.png" />
+            </image>
+         <effect>
+            <DropShadow />
+         </effect>
+        </ImageView>
+        <JFXButton layoutX="29.0" layoutY="326.0" onAction="#ExitBtn" prefHeight="46.0" prefWidth="140.0" styleClass="textfont" stylesheets="@styling.css" text="Exit" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="22.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </JFXButton>
+    </children>
+</AnchorPane>

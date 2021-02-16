@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="800.0" styleClass="textfont" stylesheets="@styling.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="typingjump.AboutController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resourses/background.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnPrevious" layoutX="591.0" layoutY="143.0" text=" ">
+         <graphic>
+            <ImageView fitHeight="84.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resourses/howToPlayRightButton.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnNext" layoutX="126.0" layoutY="140.0" text=" ">
+         <graphic>
+            <ImageView fitHeight="84.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resourses/howToPlayLeftButton.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="348.0" fitWidth="335.0" layoutX="246.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resourses/howToPlayBoard.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="85.0" layoutX="371.0" layoutY="334.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+         <image>
+            <Image url="@resourses/addTextButton.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Label fx:id="lblAbout" alignment="CENTER" layoutX="270.0" layoutY="73.0" prefHeight="226.0" prefWidth="290.0" styleClass="textfont" textAlignment="CENTER" textFill="#fff6d9">
+         <font>
+            <Font name="Cambria Bold" size="22.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="371.0" layoutY="334.0" onAction="#btnExit" styleClass="textfont" text="Back" textFill="#fff6d9">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>
